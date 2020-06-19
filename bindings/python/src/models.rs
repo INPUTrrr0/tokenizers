@@ -3,11 +3,11 @@ extern crate tokenizers as tk;
 use super::encoding::Encoding;
 use super::error::ToPyResult;
 use super::utils::Container;
-use crate::parallelism::*;
 use pyo3::exceptions;
 use pyo3::prelude::*;
 use pyo3::types::*;
 use std::path::Path;
+use tk::parallelism::*;
 
 #[pyclass]
 struct EncodeInput {

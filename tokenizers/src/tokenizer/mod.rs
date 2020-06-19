@@ -35,7 +35,6 @@ pub type Error = Box<dyn std::error::Error + Send + Sync>;
 pub type Result<T> = std::result::Result<T, Error>;
 pub type Offsets = (usize, usize);
 
-pub(crate) use crate::utils::parallelism;
 use crate::utils::parallelism::*;
 
 #[typetag::serde(tag = "type")]

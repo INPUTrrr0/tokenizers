@@ -1,6 +1,6 @@
+use crate::parallelism::*;
 use crate::tokenizer::{
-    parallelism::*, Decoder, Encoding, NormalizedString, Offsets, PostProcessor, PreTokenizer,
-    Result,
+    Decoder, Encoding, NormalizedString, Offsets, PostProcessor, PreTokenizer, Result,
 };
 use onig::Regex;
 use serde::{Deserialize, Serialize};
